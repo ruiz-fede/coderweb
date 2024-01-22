@@ -6,40 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camisetas Globales</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <header class="border">
         <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="products.html">Nuestros Productos</a>
-                </li>
-                <li>
-                    <a href="aboutUs.html">Sobre Nosotros</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contactanos</a>
-                </li>
-                <li>
-                    <a href="login.html">Iniciar Sesión</a>
-                </li>
-            </ul>
+            <div class="btn-group float-right">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="products.html">Productos</a>
+                    </li>
+                    <li>
+                        <a href="aboutUs.html">Sobre Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contactanos</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Iniciar Sesión</a>
+                    </li>
+                </ul>
+              </div>
         </nav>
+        
     </header>
     <main>
         <h1>Nuestras Camisetas</h1>
-        <img src="../img/atleti" alt="camiseta roja y negra atlético madrid">
-        <img src="../img/brasil" alt="camiseta amarilla brasil">
-        <img src="../img/chile" alt="camiseta roja chile"><br>
-        <img src="../img/psg" alt="camiseta azul psg">
-        <img src="../img/totenham" alt="camiseta tonos verdes totenham">
-        <img src="../img/arg" alt="camiseta celeste y blanca argentina">
+        <section class="columnas">
+            <div class="camisetas">
+                <img src="../img/atleti" alt="camiseta roja y negra atlético madrid">
+            </div>
+            <div class="camisetas">
+                <img src="../img/brasil" alt="camiseta amarilla brasil">
+            </div>
+            <div class="camisetas">
+                <img src="../img/chile" alt="camiseta roja chile">
+            </div>
+            <div class="camisetas">
+                <img src="../img/psg" alt="camiseta azul psg">
+            </div>
+            <div class="camisetas">
+                <img src="../img/totenham" alt="camiseta tonos verdes totenham">
+            </div>
+            <div class="camisetas">
+                <img src="../img/arg" alt="camiseta celeste y blanca argentina">
+            </div> 
+        </section>
+        
     </main>
-    <footer class="border">
+    <footer class="pie">
         <p>Todos los derechos reservados</p>
         <nav>
             <ul>
@@ -51,5 +73,6 @@
             </ul>
         </nav>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
