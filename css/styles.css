@@ -1,210 +1,197 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: antiquewhite;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+  background-color: antiquewhite;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-
-main div img {
-    width: 250px;
-    height: 200px;
+body main div img {
+  width: 250px;
+  height: 200px;
 }
-
-a {
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
+body a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
 }
-
-li {
-    list-style: none;
+body li {
+  list-style: none;
 }
-
-p {
-    font-size: 20px;
+body p {
+  font-size: 20px;
 }
-
-h1 {
-    font-size: 30px;
-    margin: 10px 5px 0 5px;
+body h1 {
+  font-size: 30px;
+  margin: 10px 5px 0 5px;
 }
 
 header nav {
-    position: absolute;
+  position: absolute;
 }
-
 
 .border {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
+
 .btn-group.float-right .btn.btn-secondary {
-    border: none !important;
+  border: none !important;
 }
 
 .dropdown-menu.dropdown-menu-right {
-    border: none !important;
-    box-shadow: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
+
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .columnas {
-    text-align: center;
-    margin-top: 30px;
-}
-
-#carouselExample {
-    position: relative;
-    z-index: 0;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .columnas2 {
-    text-align: center;
-    margin-top: 30px;
-    position: relative;
+  text-align: center;
+  margin-top: 30px;
+  position: relative;
 }
 
 .camisetas img {
-    margin-top: 20px;
-    margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .cuatro, .tres, .seis, .cinco {
-    display: none;
+  display: none;
 }
 
-.boton-centrado{
-    margin: 5px auto 15px auto;
-    text-align: center;
+.boton-centrado {
+  margin: 5px auto 15px auto;
+  text-align: center;
 }
-
 .boton-centrado a {
-    border: 3px solid #ccc;
-    color: white;
-    background-color: rgb(108, 117, 125);
-
+  border: 3px solid #ccc;
+  color: white;
+  background-color: rgb(108, 117, 125);
 }
 
 .texto p {
-    text-align: center;
-    margin-bottom: 0;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .textoUs {
-    margin-top: 40px;
-    padding: 20px;
+  margin-top: 40px;
+  padding: 20px;
 }
 
 .pie {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
 }
-
 .pie a {
-    margin-right: 10px;
+  margin-right: 10px;
 }
-
 .pie p {
-    font-weight: 600;
-    margin-left: 5px;
-}
-.formu {
-    max-width: 400px;
-    margin: 15px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  font-weight: 600;
+  margin-left: 5px;
 }
 
+.formu {
+  max-width: 400px;
+  margin: 15px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 .formu input {
-    width: 100%;
-    margin: 10px auto;
+  width: 100%;
+  margin: 10px auto;
 }
 
 .fixed-corner {
-    position: fixed;
-    top: 10px;
-    right: 10px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
 }
 
 .columnasP {
-    display: none;
+  display: none;
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-    main div img {
-        width: 80%;
-        height: 200px;
-    }
-    .camisetas {
-        display: grid;
-        margin-left: 20px;
-    }
-    .columnas .cinco, .columnas .seis {
-        display: none;
-    }
-    .columnas {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .columnasP {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .columnas2 {
-        display: none;
-    }
-
-    .formu {
-        margin-top: 100px;
-        max-width: 90%;
-    }
-    .formu input {
-        width: 100%;
-        margin: 20px auto;
-    }
+  .camisetas {
+    display: grid;
+    margin-left: 20px;
+  }
+  .camisetas img {
+    width: 80%;
+    height: 200px;
+  }
+  .columnas .cinco, .columnas .seis {
+    display: none;
+  }
+  .columnas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .columnasP {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .columnas2 {
+    display: none;
+  }
+  .formu {
+    margin-top: 100px;
+    max-width: 90%;
+  }
+  .formu input {
+    width: 100%;
+    margin: 20px auto;
+  }
 }
-
 @media only screen and (min-width: 769px) {
-    main div img {
-        width: 300px;
-        height: 300px;
-    }
-    .camisetas {
-        display: grid;
-        justify-content: center;
-        margin-left: 20px;
-    }
-    .columnas {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .columnas .cinco, .columnas .seis {
-        display:none;
-    }
-    .formu {
-        margin-top: 100px;
-        max-width: 60%;
-    }
-    .formu input {
-        width: 100%;
-        margin: 20px auto;
-    }
-    .columnas2 {
-        display: none;
-    }
-    .columnasP{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .camisetas {
+    display: grid;
+    justify-content: center;
+    margin-left: 20px;
+  }
+  .camisetas img {
+    width: 450px;
+    height: 300px;
+  }
+  .columnas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .columnas .cinco, .columnas .seis {
+    display: none;
+  }
+  .formu {
+    margin-top: 100px;
+    max-width: 60%;
+  }
+  .formu input {
+    width: 100%;
+    margin: 20px auto;
+  }
+  .columnas2 {
+    display: none;
+  }
+  .columnasP {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
+
+/*# sourceMappingURL=styles.css.map */

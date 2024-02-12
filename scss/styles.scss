@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$centrar: center;
+
+@mixin sizes($width, $heigt) {
+    width: $width;
+    height: $heigt;
+}
+
+body {
+    background-color: antiquewhite;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    main {
+        div {
+            img {
+                @include sizes(250px, 200px)
+            }
+        }
+    }
+    a {
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin: 10px 5px 0 5px;
+    }
+}
+
+header{
+    nav {
+        position: absolute;
+    }
+}
+
+.border {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-group.float-right .btn.btn-secondary {
+    border: none !important;
+}
+
+.dropdown-menu.dropdown-menu-right {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.center {
+    text-align: center;
+}
+
+.columnas {
+    text-align: $centrar;
+    margin-top: 30px;
+}
+
+.columnas2 {
+    text-align: $centrar;
+    margin-top: 30px;
+    position: relative;
+}
+
+.camisetas {
+    img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.cuatro, .tres, .seis, .cinco {
+    display: none;
+}
+
+.boton-centrado {
+    margin: 5px auto 15px auto;
+    text-align: $centrar;
+
+    a {
+        border: 3px solid #ccc;
+        color: white;
+        background-color: rgb(108, 117, 125);
+    }
+}
+
+.texto {
+    p {
+        text-align: $centrar;
+        margin-bottom: 0;
+    }
+    
+}
+
+.textoUs {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.pie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+
+    a {
+        margin-right: 10px;
+    }
+
+    p {
+        font-weight: 600;
+        margin-left: 5px;
+    }
+}
+
+.formu {
+    max-width: 400px;
+    margin: 15px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    input {
+        width: 100%;
+        margin: 10px auto;
+    }
+}
+
+.fixed-corner {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.columnasP {
+    display: none;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    .camisetas {
+        display: grid;
+        margin-left: 20px;
+
+        img {
+            @include sizes(80%, 200px)
+        } 
+    }
+    .columnas .cinco, .columnas .seis {
+        display: none;
+    }
+    .columnas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .columnasP {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .columnas2 {
+        display: none;
+    }
+
+    .formu {
+        margin-top: 100px;
+        max-width: 90%;
+
+        input {
+            width: 100%;
+            margin: 20px auto;
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) {
+ 
+    .camisetas {
+        display: grid;
+        justify-content: center;
+        margin-left: 20px;
+
+        img {
+            @include sizes(450px, 300px)
+        }
+    }
+    .columnas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .columnas .cinco, .columnas .seis {
+        display:none;
+    }
+    .formu {
+        margin-top: 100px;
+        max-width: 60%;
+
+        input {
+            width: 100%;
+            margin: 20px auto;
+        }
+    }
+    .columnas2 {
+        display: none;
+    }
+    .columnasP{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
