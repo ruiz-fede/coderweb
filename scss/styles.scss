@@ -20,7 +20,7 @@ body {
     main {
         div {
             img {
-                @include sizes(250px, 200px)
+                @include sizes(250px, 200px);
             }
         }
     }
@@ -48,6 +48,7 @@ body {
         display: inline-block;
         margin-left: 10px;
         margin-top: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     }
 }
 
@@ -94,6 +95,7 @@ header{
     img {
         margin-top: 20px;
         margin-bottom: 20px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     }
 }
 
