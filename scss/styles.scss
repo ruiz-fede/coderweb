@@ -39,8 +39,15 @@ body {
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 25px;
         margin: 10px 5px 0 5px;
+        display: inline-block;
+    }
+    .logo {
+        @include sizes(40px, 40px);
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 10px;
     }
 }
 
@@ -50,6 +57,10 @@ header{
     }
 }
 
+.top {
+    display: flex;
+    align-items: center;
+}
 .border {
     display: flex;
     justify-content: flex-end;
@@ -155,6 +166,15 @@ header{
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
 
+    body {
+        h1 {
+            font-size: 40px;
+        }
+        .logo {
+            @include sizes(50px, 50px);
+        }
+    }
+    
     .camisetas {
         display: grid;
         margin-left: 20px;
@@ -190,7 +210,16 @@ header{
 }
 
 @media only screen and (min-width: 769px) {
- 
+    
+    body {
+        h1 {
+            font-size: 60px;
+        }
+        .logo {
+            @include sizes(80px, 80px);
+        }
+    }
+    
     .camisetas {
         display: grid;
         justify-content: center;
